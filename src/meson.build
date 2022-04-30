@@ -1,1 +1,1 @@
-main_source = files('main.cpp')
+project_sources = files('main.cpp')
