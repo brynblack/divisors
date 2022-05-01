@@ -1,4 +1,4 @@
-#include "trial_division.hpp"
+#include "divs/trial_division.hpp"
 #include <iostream>
 
 auto main(int argc, char *argv[]) -> int

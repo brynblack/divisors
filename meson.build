@@ -2,7 +2,7 @@ project('divisors', 'cpp',
   default_options : ['cpp_std=c++20', 'warning_level=3'],
   license : 'MIT',
   meson_version : '>= 0.62.1',
-  version : '1.0.0')
+  version : '1.0.1')
 
 include_dir = include_directories('include')
 

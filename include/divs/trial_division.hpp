@@ -1,5 +1,5 @@
-#ifndef TRIAL_DIVISION_HPP
-#define TRIAL_DIVISION_HPP
+#ifndef DIVS_TRIAL_DIVISION_HPP
+#define DIVS_TRIAL_DIVISION_HPP
 
 #include <cmath>
 #include <vector>
@@ -10,7 +10,8 @@ namespace divs
     auto trial_division(const T &n) -> std::vector<T>
     {
         std::vector<T> factors;
-        for (T i = 1; i <= std::sqrt(n); ++i)
+        auto limit = std::sqrt(n);
+        for (T i = 1; i <= limit; ++i)
         {
             if (n % i == 0)
             {
@@ -23,4 +24,4 @@ namespace divs
     }
 } // namespace divs
 
-#endif // TRIAL_DIVISION_HPP
+#endif // DIVS_TRIAL_DIVISION_HPP
