@@ -10,7 +10,7 @@ namespace divs
     auto trial_division(const T &n) -> std::vector<T>
     {
         std::vector<T> factors;
-        auto limit = std::sqrt(n);
+        T limit = std::sqrt(n);
         for (T i = 1; i <= limit; ++i)
         {
             if (n % i == 0)
