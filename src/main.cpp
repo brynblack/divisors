@@ -14,7 +14,7 @@ auto main(int argc, char *argv[]) -> int
     if (argv[1][0] == '-' && std::isdigit(argv[1][1]))
     {
         std::cerr << "Error: Negative integrals are not supported." << "\n";
-        return -1;
+        return 1;
     }
 
     try
@@ -28,12 +28,12 @@ auto main(int argc, char *argv[]) -> int
     {
         std::cerr << "Error: Integral is too large." << "\n";
         std::cerr << "Maximum size supported is 18446744073709551615." << "\n";
-        return -1;
+        return 1;
     }
     catch (const std::invalid_argument &err)
     {
         std::cerr << "Error: Argument provided is not an integral." << "\n";
-        return -1;
+        return 1;
     }
 
     return 0;
